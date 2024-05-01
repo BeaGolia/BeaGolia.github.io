@@ -1,0 +1,82 @@
+header{
+  height: 55px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgb(165, 49, 49);
+  border-bottom: 1px solid rgb(165, 49, 49);
+  color: rgb(255, 247, 237);
+}
+.left-section{
+  font-family: Oswald, Roboto, 'Times New Roman';
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 34px;
+  flex-shrink: 0;
+}
+.left-section-home,
+.left-section-info,
+.left-section-contacts {
+  margin: 0 10px; 
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: white;
+}
+a:hover, a:active{
+  text-decoration: underline;
+  color: white;
+}
+.middle-section{
+  font-family: Bebas Neue, Oswald, Roboto, Arial;
+  flex: 1;
+  padding-left: 300px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.right-section{
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0; 
+}
+.linkedin-button, .git-button{
+  margin: 0 24px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  width: 39px;
+  border: none;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+.linkedin-button:hover, .git-button:hover{
+  opacity: 0.8;
+}
+.linkedin-button:active, .git-button:active{
+  opacity: 0.6;
+}
+.right-section-linkedin, .right-section-github{
+  width: 29px;
+  object-fit: contain;
+  object-position: 50% 50%;
+ }
+ @media screen and (max-width: 768px) {
+  .left-section {
+    margin-left: 10px;
+  }
+  .middle-section {
+    visibility: hidden;
+  }
+  .right-section {
+    visibility: hidden;
+  }
+}
