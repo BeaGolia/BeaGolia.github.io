@@ -70,6 +70,9 @@ a:hover, a:active{
   object-position: 50% 50%;
  }
  @media screen and (max-width: 768px) {
+  .header{
+    width: 100vw;
+  }
   .left-section {
     margin-left: 10px;
   }
@@ -80,3 +83,9 @@ a:hover, a:active{
     visibility: hidden;
   }
 }
+@media screen and (max-width: 1300px){
+  .right-section{
+    display: none;
+  }
+}
+  
