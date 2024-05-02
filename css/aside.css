@@ -83,16 +83,13 @@
   .hands-pic, .s2i-pic, .pm-pic, .uni-pic, .am-pic{
     display: none;
   }
-  .resume,.second-resume{
-    display: grid;
-    grid-template-columns: 200px;
-    padding-bottom: 0;
+  .aside-resume,.second-resume{
+    display: block;
+    padding: 0;
   }
-  .am-text{
-    margin-left: -290px;
-  }
-  .s2i-text,.pm-text{
-    margin-left: 60px;
+  .am-text, .s2i-text{
+    padding-left: 10px;
+    margin-left: 0;
   }
   .h1 {
     font-size: 60px; 
@@ -106,5 +103,29 @@
   .names,
   .phone {
     flex-direction: column; 
+  }
+}
+@media screen and (max-width: 1300px){
+  .aside-resume, .second-resume{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+    column-gap: 50px;
+    padding-left: 0;
+  }
+  .uni-pic,.pm-pic{
+    margin-left: 20px;
+  }
+  .am-pic,.s2i-pic{
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .uni-text,.pm-text{
+    padding-left: 0;
+    
+  }
+  .am-text,.s2i-text{
+    padding-left: 20px;
+    margin-left: 0;
   }
 }
