@@ -51,6 +51,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 768px) {
   .outro {
     grid-template-columns: 1fr; 
@@ -67,15 +68,27 @@
     text-align: center; 
   }
   .fieldset {
-    width: 250px; 
+    width: 200px; 
     margin: 0 auto; 
   }
   .submit {
     margin-top: 20px; 
-    width: 100%; 
+    width: 100px; 
+    margin-left: 20px;
   }
   .names, .phone {
     flex-direction: column; 
     text-align: center; 
+  }
+}
+@media screen and (max-width: 1300px){
+  .hands-pic{
+    display: none;
+  }
+  .outro-form{
+    margin-left: 50px;
+  }
+  .submit{
+    margin-left: 350px;
   }
 }
